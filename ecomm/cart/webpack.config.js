@@ -14,6 +14,7 @@ module.exports = {
         './CartShow': './src/index',
       },
       // shared: packageJson.dependencies,
+      shared: ['faker'],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
