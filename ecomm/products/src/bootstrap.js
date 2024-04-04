@@ -20,7 +20,10 @@ const mount = (el) => {
 // Which DEFENETLY has an element with an id of 'dev-products'
 // We want to immediately render our app into that element
 if (process.env.NODE_ENV === 'development') {
+  console.log('Products APP - mode development');
+
   const el = document.querySelector('#dev-products');
+  console.log('Products APP el', el);
 
   // Assuming our container doesnt have an element
   // with id 'dev-products'...
